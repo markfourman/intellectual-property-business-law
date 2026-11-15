@@ -12,7 +12,7 @@
 <meta property="og:image" content="https://markfourman.github.io/intellectual-property-business-law/preview.png">
 <meta name="twitter:card" content="summary_large_image">
 <style>
-:root{--ink:#1a1a1a;--bg:#f7f7f5;--card:#fff;--line:#c9c9c4;
+:root{--red:#b5121b;--redbg:#fdecec;--ink:#1a1a1a;--bg:#f7f7f5;--card:#fff;--line:#c9c9c4;
 --teal:#0b6465;--tealbg:#e3f3f3;--purple:#5b2a86;--purplebg:#f0e8f8;
 --orange:#8f4300;--orangebg:#fdeedd;--blue:#1b4a99;--bluebg:#e6eefb}
 *{box-sizing:border-box}
@@ -23,7 +23,7 @@ header.top p{margin:0;font-size:.85rem}
 header.top .brand{font-weight:700;letter-spacing:.04em;text-transform:uppercase}
 .progress{display:flex;gap:6px;margin:8px 0 4px;padding:0;list-style:none}
 .progress li{flex:1;height:8px;border-radius:4px;background:var(--line)}
-.progress li.done{background:var(--ink)}
+.progress li.done{background:var(--red)}
 .card{background:var(--card);border:2px solid var(--accent,var(--line));border-radius:14px;padding:20px;margin:12px 0}
 .tag{display:inline-block;font-size:.85rem;font-weight:700;padding:4px 10px;border-radius:999px;background:var(--accentbg);color:var(--accent);border:1px solid var(--accent)}
 .head{display:flex;align-items:center;gap:12px}
@@ -64,13 +64,51 @@ footer{max-width:640px;margin:24px auto;padding:0 16px 40px;font-size:.88rem}
 footer p{margin:.4em 0}
 a{color:var(--blue);font-weight:600}
 .nav{display:flex;justify-content:flex-end;margin-top:12px;gap:10px;flex-wrap:wrap}
+.flow{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:12px 0}
+.flow li{flex:1 1 64px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-size:.8rem;font-weight:700;line-height:1.25;background:var(--accentbg);border:1px solid var(--accent);border-radius:10px;padding:8px 4px}
+.flow li.arr{flex:0 0 auto;background:none;border:0;padding:0;font-size:1.1rem;color:var(--accent)}
+.reveal .flow li{background:#fff}
+.em{font-size:1.7rem;line-height:1.2}
+.bar{background:#fff;border:2px solid var(--accent);border-radius:8px;padding:6px 10px;font-weight:700;font-size:.9rem;margin:6px 0;white-space:nowrap}
+.bar.over{background:var(--accent);color:#fff}
+.nest div{border:2px dashed var(--accent);border-radius:12px;padding:8px 10px;margin-top:6px;background:#fff;font-weight:700}
+.nest .n2,.nest .n3{border-style:solid}.nest .n3{background:var(--accent);color:#fff}
+.tiles{display:flex;gap:10px;margin:8px 0}
+.tiles div{flex:1;text-align:center;background:#fff;border:2px solid var(--accent);border-radius:10px;padding:8px;font-size:1.6rem;line-height:1.3}
+.tiles small{display:block;font-size:.85rem;font-weight:700}
+.big{font-size:3.4rem;line-height:1;text-align:center}
+.stars{font-size:1.6rem;margin:0;letter-spacing:4px}
+ul.check{list-style:"\2705  "}
+.rungs{border-left:6px solid var(--teal);border-right:6px solid var(--teal);border-radius:6px;padding:8px!important}
+.banner{background:var(--red);color:#fff;border-bottom:6px solid #7d0c13}
+.banner .in{max-width:640px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.banner .t{flex:1 1 220px}
+.banner b{display:block;font-size:1.05rem;letter-spacing:.03em}
+.banner span.s{font-size:.85rem}
+.banner svg{display:block;max-width:100%;height:auto;flex:none}
+.deco{display:flex;gap:10px;align-items:center;justify-content:space-between;max-width:640px;margin:0 auto;padding:6px 16px;color:var(--red);font:700 .75rem/1.2 ui-monospace,Menlo,Consolas,monospace;overflow:hidden;white-space:nowrap}
+.dna{height:26px;margin:8px 0;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20120%2026%22%20width%3D%22120%22%20height%3D%2226%22%3E%3Cline%20x1%3D%2214%22%20y1%3D%2222.0%22%20x2%3D%2214%22%20y2%3D%224.0%22%20stroke%3D%22%239a9a9a%22%20stroke-width%3D%222%22/%3E%3Cline%20x1%3D%2228%22%20y1%3D%2213.3%22%20x2%3D%2228%22%20y2%3D%2212.7%22%20stroke%3D%22%239a9a9a%22%20stroke-width%3D%222%22/%3E%3Cline%20x1%3D%2242%22%20y1%3D%224.0%22%20x2%3D%2242%22%20y2%3D%2222.0%22%20stroke%3D%22%239a9a9a%22%20stroke-width%3D%222%22/%3E%3Cline%20x1%3D%2256%22%20y1%3D%2212.5%22%20x2%3D%2256%22%20y2%3D%2213.5%22%20stroke%3D%22%239a9a9a%22%20stroke-width%3D%222%22/%3E%3Cline%20x1%3D%2270%22%20y1%3D%2222.0%22%20x2%3D%2270%22%20y2%3D%224.0%22%20stroke%3D%22%239a9a9a%22%20stroke-width%3D%222%22/%3E%3Cline%20x1%3D%2284%22%20y1%3D%2213.8%22%20x2%3D%2284%22%20y2%3D%2212.2%22%20stroke%3D%22%239a9a9a%22%20stroke-width%3D%222%22/%3E%3Cline%20x1%3D%2298%22%20y1%3D%224.1%22%20x2%3D%2298%22%20y2%3D%2221.9%22%20stroke%3D%22%239a9a9a%22%20stroke-width%3D%222%22/%3E%3Cline%20x1%3D%22112%22%20y1%3D%2211.9%22%20x2%3D%22112%22%20y2%3D%2214.1%22%20stroke%3D%22%239a9a9a%22%20stroke-width%3D%222%22/%3E%3Cpolyline%20points%3D%220%2C13.0%202%2C15.0%204%2C16.9%206%2C18.6%208%2C20.0%2010%2C21.1%2012%2C21.7%2014%2C22.0%2016%2C21.8%2018%2C21.2%2020%2C20.2%2022%2C18.8%2024%2C17.1%2026%2C15.3%2028%2C13.3%2030%2C11.3%2032%2C9.4%2034%2C7.7%2036%2C6.2%2038%2C5.1%2040%2C4.3%2042%2C4.0%2044%2C4.1%2046%2C4.7%2048%2C5.7%2050%2C7.0%2052%2C8.6%2054%2C10.5%2056%2C12.5%2058%2C14.4%2060%2C16.4%2062%2C18.1%2064%2C19.6%2066%2C20.8%2068%2C21.6%2070%2C22.0%2072%2C21.9%2074%2C21.4%2076%2C20.5%2078%2C19.2%2080%2C17.6%2082%2C15.8%2084%2C13.8%2086%2C11.8%2088%2C9.9%2090%2C8.1%2092%2C6.6%2094%2C5.3%2096%2C4.5%2098%2C4.1%20100%2C4.1%20102%2C4.5%20104%2C5.4%20106%2C6.6%20108%2C8.2%20110%2C10.0%20112%2C11.9%20114%2C13.9%20116%2C15.9%20118%2C17.7%20120%2C19.2%22%20fill%3D%22none%22%20stroke%3D%22%23b5121b%22%20stroke-width%3D%223%22/%3E%3Cpolyline%20points%3D%220%2C13.0%202%2C11.0%204%2C9.1%206%2C7.4%208%2C6.0%2010%2C4.9%2012%2C4.3%2014%2C4.0%2016%2C4.2%2018%2C4.8%2020%2C5.8%2022%2C7.2%2024%2C8.9%2026%2C10.7%2028%2C12.7%2030%2C14.7%2032%2C16.6%2034%2C18.3%2036%2C19.8%2038%2C20.9%2040%2C21.7%2042%2C22.0%2044%2C21.9%2046%2C21.3%2048%2C20.3%2050%2C19.0%2052%2C17.4%2054%2C15.5%2056%2C13.5%2058%2C11.6%2060%2C9.6%2062%2C7.9%2064%2C6.4%2066%2C5.2%2068%2C4.4%2070%2C4.0%2072%2C4.1%2074%2C4.6%2076%2C5.5%2078%2C6.8%2080%2C8.4%2082%2C10.2%2084%2C12.2%2086%2C14.2%2088%2C16.1%2090%2C17.9%2092%2C19.4%2094%2C20.7%2096%2C21.5%2098%2C21.9%20100%2C21.9%20102%2C21.5%20104%2C20.6%20106%2C19.4%20108%2C17.8%20110%2C16.0%20112%2C14.1%20114%2C12.1%20116%2C10.1%20118%2C8.3%20120%2C6.8%22%20fill%3D%22none%22%20stroke%3D%22%230b6465%22%20stroke-width%3D%223%22/%3E%3C/svg%3E") repeat-x center/auto 26px}
+.card{position:relative}
+.card::after{content:"";position:absolute;right:10px;bottom:8px;width:90px;height:52px;background:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20120%2070%22%20width%3D%22120%22%20height%3D%2270%22%20fill%3D%22none%22%20stroke%3D%22%23b5121b%22%20stroke-width%3D%223%22%3E%3Cpath%20d%3D%22M0%2010h40l12%2012h30l10-10h28%22/%3E%3Cpath%20d%3D%22M0%2035h28l10%2010h36l10-10h36%22/%3E%3Cpath%20d%3D%22M0%2060h50l8-8h26l10%2010h26%22/%3E%3Ccircle%20cx%3D%2240%22%20cy%3D%2210%22%20r%3D%224%22%20fill%3D%22%23b5121b%22/%3E%3Ccircle%20cx%3D%2282%22%20cy%3D%2222%22%20r%3D%224%22%20fill%3D%22%23b5121b%22/%3E%3Ccircle%20cx%3D%2228%22%20cy%3D%2235%22%20r%3D%224%22%20fill%3D%22%23b5121b%22/%3E%3Ccircle%20cx%3D%2294%22%20cy%3D%2235%22%20r%3D%224%22%20fill%3D%22%23b5121b%22/%3E%3Ccircle%20cx%3D%2258%22%20cy%3D%2252%22%20r%3D%224%22%20fill%3D%22%23b5121b%22/%3E%3Crect%20x%3D%2296%22%20y%3D%2252%22%20width%3D%2214%22%20height%3D%2210%22%20rx%3D%222%22/%3E%3C/svg%3E") no-repeat center/contain;opacity:.09;pointer-events:none}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+.pills>span{border:2px solid var(--red);color:var(--red);background:#fff;border-radius:999px;padding:3px 12px;font-weight:700;font-size:.9rem}
+.maple{color:var(--red)}
+ul.apps{list-style:none;padding:0;display:grid;gap:8px;margin:8px 0}
+.apps a{display:block;border:2px solid var(--red);border-radius:10px;padding:10px 14px;min-height:48px;text-decoration:none;color:var(--ink);background:#fff;font-weight:700}
+.apps a:hover{background:var(--redbg)}
+.apps small{display:block;font-weight:400;font-size:.88rem}
 .sr{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 @media (prefers-reduced-motion:no-preference){.reveal{animation:fade .35s ease}@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
 </style>
 </head>
 <body>
+<div class="banner"><div class="in">
+  <div class="t"><b><span aria-hidden="true">🍁 </span>SCM850 · International Business Law</b><span class="s">Seneca Polytechnic · Supply Chain Management · student project</span></div>
+  <div aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 44" width="220" height="44"><line x1="21" y1="40.0" x2="21" y2="4.0" stroke="#ffffff" stroke-width="2"/><line x1="42" y1="24.5" x2="42" y2="19.5" stroke="#ffffff" stroke-width="2"/><line x1="63" y1="4.4" x2="63" y2="39.6" stroke="#ffffff" stroke-width="2"/><line x1="84" y1="17.0" x2="84" y2="27.0" stroke="#ffffff" stroke-width="2"/><line x1="105" y1="38.9" x2="105" y2="5.1" stroke="#ffffff" stroke-width="2"/><line x1="126" y1="29.4" x2="126" y2="14.6" stroke="#ffffff" stroke-width="2"/><line x1="147" y1="6.2" x2="147" y2="37.8" stroke="#ffffff" stroke-width="2"/><line x1="168" y1="12.3" x2="168" y2="31.7" stroke="#ffffff" stroke-width="2"/><line x1="189" y1="36.5" x2="189" y2="7.5" stroke="#ffffff" stroke-width="2"/><line x1="210" y1="33.7" x2="210" y2="10.3" stroke="#ffffff" stroke-width="2"/><polyline points="0,22.0 2,24.6 4,27.1 6,29.5 8,31.7 10,33.8 12,35.6 14,37.1 16,38.4 18,39.3 20,39.8 22,40.0 24,39.8 26,39.3 28,38.4 30,37.1 32,35.6 34,33.8 36,31.7 38,29.5 40,27.1 42,24.5 44,22.0 46,19.4 48,16.9 50,14.5 52,12.2 54,10.2 56,8.4 58,6.8 60,5.6 62,4.7 64,4.2 66,4.0 68,4.2 70,4.7 72,5.6 74,6.9 76,8.4 78,10.2 80,12.3 82,14.6 84,17.0 86,19.5 88,22.0 90,24.6 92,27.1 94,29.5 96,31.8 98,33.8 100,35.6 102,37.2 104,38.4 106,39.3 108,39.8 110,40.0 112,39.8 114,39.3 116,38.3 118,37.1 120,35.6 122,33.7 124,31.7 126,29.4 128,27.0 130,24.5 132,21.9 134,19.4 136,16.9 138,14.5 140,12.2 142,10.2 144,8.3 146,6.8 148,5.6 150,4.7 152,4.2 154,4.0 156,4.2 158,4.8 160,5.7 162,6.9 164,8.5 166,10.3 168,12.3 170,14.6 172,17.0 174,19.5 176,22.1 178,24.7 180,27.2 182,29.6 184,31.8 186,33.9 188,35.7 190,37.2 192,38.4 194,39.3 196,39.8 198,40.0 200,39.8 202,39.2 204,38.3 206,37.1 208,35.5 210,33.7 212,31.6 214,29.4 216,27.0 218,24.4 220,21.9" fill="none" stroke="#ffffff" stroke-width="3"/><polyline points="0,22.0 2,19.4 4,16.9 6,14.5 8,12.3 10,10.2 12,8.4 14,6.9 16,5.6 18,4.7 20,4.2 22,4.0 24,4.2 26,4.7 28,5.6 30,6.9 32,8.4 34,10.2 36,12.3 38,14.5 40,16.9 42,19.5 44,22.0 46,24.6 48,27.1 50,29.5 52,31.8 54,33.8 56,35.6 58,37.2 60,38.4 62,39.3 64,39.8 66,40.0 68,39.8 70,39.3 72,38.4 74,37.1 76,35.6 78,33.8 80,31.7 82,29.4 84,27.0 86,24.5 88,22.0 90,19.4 92,16.9 94,14.5 96,12.2 98,10.2 100,8.4 102,6.8 104,5.6 106,4.7 108,4.2 110,4.0 112,4.2 114,4.7 116,5.7 118,6.9 120,8.4 122,10.3 124,12.3 126,14.6 128,17.0 130,19.5 132,22.1 134,24.6 136,27.1 138,29.5 140,31.8 142,33.8 144,35.7 146,37.2 148,38.4 150,39.3 152,39.8 154,40.0 156,39.8 158,39.2 160,38.3 162,37.1 164,35.5 166,33.7 168,31.7 170,29.4 172,27.0 174,24.5 176,21.9 178,19.3 180,16.8 182,14.4 184,12.2 186,10.1 188,8.3 190,6.8 192,5.6 194,4.7 196,4.2 198,4.0 200,4.2 202,4.8 204,5.7 206,6.9 208,8.5 210,10.3 212,12.4 214,14.6 216,17.0 218,19.6 220,22.1" fill="none" stroke="#ffd9d9" stroke-width="3"/></svg></div>
+</div></div>
+<div class="deco" aria-hidden="true"><span>🍁 CANADA</span><span>A·T·G·C</span><span>01000011 01000001 01001110</span><span>💻</span></div>
 <header class="top">
-  <p class="brand">Canadian Business Law</p>
+  <p class="brand">Canadian Business Law · <span class="maple" aria-hidden="true">🍁</span> Tech meets biology</p>
   <p>Educational summary by a Seneca supply chain student. Not legal advice.</p>
   <ol class="progress" id="progress" aria-hidden="true"></ol>
   <p id="steptxt"></p>
@@ -83,9 +121,10 @@ a{color:var(--blue);font-weight:600}
   <em>Harvard College v. Canada (Commissioner of Patents)</em>, 2002 SCC 76.<br>
   <em>Monsanto Canada Inc. v. Schmeiser</em>, 2004 SCC 34.</p>
   <p><strong>Treaties:</strong> United Nations Convention on Contracts for the International Sale of Goods (1980). Convention on the Recognition and Enforcement of Foreign Arbitral Awards (1958).</p>
-  <p>Scenario 4 adapted from [TEXTBOOK CITATION - add from your copy]. It is a textbook hypothetical, not a real court case.</p>
-  <p>Educational summary, not legal advice.</p>
-  <p>Made for SCM850 International Business Law, Seneca Polytechnic. Built by Mark Fourmanovskis · <a href="https://www.linkedin.com/in/mark-fourmanovskis/">LinkedIn</a> · <a href="https://github.com/markfourman">GitHub</a></p>
+  <p>Scenario 4 adapted from Iskra, E., &amp; Nicholson, M. J. (2020). <em>Legal aspects of international business: A Canadian perspective</em> (4th ed., Box 9.2). Emond Publishing.. It is a textbook hypothetical, not a real court case.</p>
+  <div class="dna" aria-hidden="true"></div>
+  <p>Educational summary, not legal advice. Student project, not an official Seneca Polytechnic publication.</p>
+  <p>Made in Canada <span aria-hidden="true">🍁</span> for SCM850 International Business Law, Seneca Polytechnic. Built by Mark Fourmanovskis · <a href="https://www.linkedin.com/in/mark-fourmanovskis/">LinkedIn</a> · <a href="https://github.com/markfourman">GitHub</a></p>
 </footer>
 <script>
 const ICONS={
@@ -93,8 +132,10 @@ teal:'<svg viewBox="0 0 56 56" aria-hidden="true"><rect x="4" y="8" width="48" h
 purple:'<svg viewBox="0 0 56 56" aria-hidden="true"><ellipse cx="26" cy="34" rx="17" ry="11" fill="#f0e8f8" stroke="#5b2a86" stroke-width="3"/><circle cx="38" cy="22" r="7" fill="#f0e8f8" stroke="#5b2a86" stroke-width="3"/><circle cx="43" cy="14" r="5" fill="#f0e8f8" stroke="#5b2a86" stroke-width="3"/><path d="M9 34c-6 0-6 9-1 11" fill="none" stroke="#5b2a86" stroke-width="3"/><circle cx="41" cy="20" r="1.8" fill="#1a1a1a"/></svg>',
 orange:'<svg viewBox="0 0 56 56" aria-hidden="true"><path d="M28 52V20" stroke="#8f4300" stroke-width="3"/><g fill="#fdeedd" stroke="#8f4300" stroke-width="2.5"><circle cx="28" cy="10" r="5"/><circle cx="20" cy="18" r="5"/><circle cx="36" cy="18" r="5"/><circle cx="21" cy="28" r="4"/><circle cx="35" cy="28" r="4"/></g><path d="M28 44c-8-1-12-5-14-10 8 0 13 3 14 10zM28 44c8-1 12-5 14-10-8 0-13 3-14 10z" fill="#8f4300"/></svg>',
 blue:'<svg viewBox="0 0 56 56" aria-hidden="true"><rect x="10" y="6" width="30" height="40" rx="4" fill="#e6eefb" stroke="#1b4a99" stroke-width="3"/><path d="M16 18h18M16 26h18M16 34h10" stroke="#1b4a99" stroke-width="3"/><circle cx="40" cy="40" r="11" fill="#1b4a99"/><path d="M34 40l4 4 8-8" fill="none" stroke="#fff" stroke-width="3"/></svg>'};
+function flow(a){return '<ol class="flow">'+a.map(x=>`<li><span class="em" aria-hidden="true">${x[0]}</span><span>${x[1]}</span></li>`).join('<li class="arr" aria-hidden="true">➜</li>')+'</ol>'}
+const LE=['💡','🛒','🧬','🦠','🌱','🐁'],PE=['🏛️','📜','✈️'];
 const C=[
-{c:'teal',tag:'Patents · Real case',title:'Amazon 1-Click',
+{c:'teal',tag:'💻 Tech patent · Real case',title:'Amazon 1-Click',setup:[['🛒','1-click idea'],['📝','Patent application'],['🚫','Office refuses'],['⚖️','Court']],viz:flow([['⚖️','Not excluded'],['🔁','Sent back'],['✅','Allowed 2011']]),
  story:'In the late 1990s, Amazon filed for a Canadian patent on one-click ordering. The patent office refused, saying a business method is not an "invention." Amazon took it to court.',
  term:'Patent: a time-limited right to stop others from using your invention.',
  q:'Can a computer-based business method like 1-click be patented in Canada?',
@@ -104,17 +145,17 @@ const C=[
  extra:'In the Patent Act, "art" means a way of doing something. It does not mean artwork. The ending: the patent office allowed the patent in December 2011, 13 years after Amazon applied.',
  sc:'Checkout steps are a process, and processes can be protected when they are tied to real technology. Ideas about how to run a supply chain are harder to protect than the systems that run it.',
  dq:'How long should a business method be protected before everyone can copy it?'},
-{c:'purple',tag:'Patents · Real case',title:'The Harvard Mouse',
+{c:'purple',tag:'🧬 Biotech patent · Real case',title:'The Harvard Mouse',setup:[['🔬','Lab modifies a gene'],['🐁','Research mouse'],['📝','Patent application'],['🚫','Mouse refused']],viz:'<div class="tiles" role="img" aria-label="United States: mouse patent granted in 1988. Canada: mouse patent refused in 2002."><div>🇺🇸 🐁 ✅<small>US: granted 1988</small></div><div>🇨🇦 🐁 ❌<small>Canada: refused 2002</small></div></div>',
  story:'Harvard scientists created a mouse genetically modified to get cancer, for research. They sought patents on the method, and on the mouse itself. Canada\'s patent office refused the mouse.',
  term:'Higher life forms: plants and animals as whole living things.',
  q:'Can the mouse itself be patented in Canada?',
  opts:['Yes, it was invented by people.','No, it is a higher life form.'],ok:1,
  out:'The Supreme Court said no. A mouse is not a "manufacture" or "composition of matter." Whether to allow patents on higher life forms is a decision for Parliament.',
- why:'Why it matters: the same invention can be protected in one country and not in another. Patents stop at the border: the US patent gave Harvard no rights in Canada, so it had to apply again here.',
+ why:'Why it matters: the same invention can be protected in one country and not in another. Patents stop at the border: the US patent gave Harvard no rights in Canada, so it needed its own Canadian application, and the mouse claims were refused.',
  vote:'Close call: 5 judges to 4.',split:[5,4],compare:true,
  sc:'Rules differ by country, so a firm choosing where to do research, license or sell must check each market. Legal rules are part of network design, like tariffs and lead times.',
  dq:'Should Canada follow the US on patenting higher life forms?'},
-{c:'orange',tag:'Patents · Real case',title:'Monsanto v. Schmeiser',
+{c:'orange',tag:'🌾 Agri-biotech patent · Real case',title:'Monsanto v. Schmeiser',setup:[['🧬','Patented gene'],['🌱','Canola field'],['👨‍🌾','No licence'],['⚖️','Monsanto sues']],viz:'<div class="nest" role="img" aria-label="Diagram: the plant is not patentable, but the cell and the gene inside it are patented."><div>🌱 Plant: ✖ not patentable<div class="n2">🦠 Cell: ✔ patented<div class="n3">🧬 Gene: ✔ patented</div></div></div></div>',
  story:'Monsanto patented a gene and a cell that make canola resist its weedkiller. Farmer Percy Schmeiser grew canola that contained them. He never bought the seed or signed a licence.',
  term:'Infringement: using a patented invention without permission.',
  q:'Did Schmeiser infringe the patent?',
@@ -124,7 +165,7 @@ const C=[
  vote:'Close call: 5 judges to 4.',split:[5,4],
  sc:'Seed and grain pass through farms, trucks and elevators. Knowing exactly what is in a load, and who has rights to it, is a traceability and compliance question.',
  dq:'Should it matter that the farmer never signed a licence?'},
-{c:'blue',tag:'Agency · Hypothetical scenario',title:'Monster Road Equipment',
+{c:'blue',tag:'🏭 Agency · Hypothetical scenario',title:'Monster Road Equipment',setup:[['🏭','Monster, Winnipeg'],['🤝','Agent, Sydney'],['🏗️','Buyer, Australia']],pre:'<div role="img" aria-label="Bar chart: the agent\'s limit was under 400,000 dollars. The contract he signed was 824,000 dollars, about double."><div class="bar" style="width:48.5%">Limit $400k</div><div class="bar over">Signed $824k ⚠️</div></div>',
  story:'A Winnipeg equipment maker hires an agent in Australia. In a private agreement, it limits him to contracts under Cdn$400,000. He signs an 8-unit sale to a construction firm for Cdn$824,000. The factory is at peak capacity, delivers late, and the buyer sues.',
  term:'Agent: a person who can make deals for a company (the principal).',
  q:'Is Monster bound by the contract?',
@@ -158,8 +199,10 @@ function render(){
  final();
 }
 function intro(){
- app.innerHTML=`<section class="card hook" ${acc('purple')}><h1>Can you patent a mouse?</h1>
- <p>Take a guess. Then try four Canadian business law cases, about 5 minutes, and see your score.</p>
+ app.innerHTML=`<section class="card hook" ${acc('purple')}><div class="big" aria-hidden="true">🐁❓</div><h1>Can you patent a mouse?</h1>
+ <div class="pills" aria-label="Themes"><span><span aria-hidden="true">💻 </span>Tech</span><span><span aria-hidden="true">🧬 </span>Biology</span><span><span aria-hidden="true">🍁 </span>Canadian law</span></div>
+ <div class="dna" aria-hidden="true"></div>
+ <p>Take a guess. Then try four Canadian business law cases, from a website checkout to a lab mouse to a canola field. About 5 minutes, with a score at the end.</p>
  <div class="opts" role="group" aria-label="Your guess">
  <button data-g="1">Yes, anything people create</button><button data-g="2">No, not in Canada</button></div>
  <div id="hk"></div></section>`;
@@ -172,7 +215,7 @@ function caseView(k){
  app.innerHTML=`<section class="card" ${acc(k.c)}>
  <span class="tag">${k.tag}</span>
  <div class="head">${ICONS[k.c]}<h2>${step}. ${k.title}</h2></div>
- <p>${k.story}</p><p><em>${k.term}</em></p>
+ <p>${k.story}</p>${flow(k.setup)}${k.pre||''}<p>📖 <em>${k.term}</em></p>
  <p class="q" id="q">You're the judge: ${k.q}</p>
  <div class="opts" role="group" aria-labelledby="q">${k.opts.map((o,i)=>`<button data-i="${i}">${o}</button>`).join('')}</div>
  <div id="out"></div></section>`;
@@ -184,11 +227,11 @@ function pick(k,i){
  const good=i===k.ok;if(good)score++;
  let h=`<div class="reveal"><p class="badge">${good?'✔ You got it.':'✖ Not quite.'}</p><p>${k.out}</p>`;
  if(k.vote)h+=`<p>${k.vote}</p><div class="split" aria-hidden="true">${'<span></span>'.repeat(k.split[0])}${'<span class="no"></span>'.repeat(k.split[1])}</div>`;
- h+=`<p class="why">${k.why}</p>`;
+ h+=(k.viz||'')+`<p class="why">💡 ${k.why}</p>`;
  if(k.extra)h+=`<p>${k.extra}</p>`;
  if(k.compare)h+=`<button class="small" id="cmp" aria-expanded="false">Compare Canada and the US</button><div id="cmpbox" hidden><table><caption class="sr">Canada compared with the US</caption><tr><th></th><th>Canada</th><th>US</th></tr><tr><th>Mouse</th><td>✖ Refused (2002)</td><td>✔ Patent granted in 1988</td></tr></table></div>`;
- h+=`</div><div class="reveal sc"><p class="badge">Supply chain angle</p><p>${k.sc}</p></div>
- <button class="small" id="cls" aria-expanded="false">Use this in class</button><div id="clsbox" hidden class="reveal"><p><strong>Discuss:</strong> ${k.dq}</p></div>`;
+ h+=`</div><div class="reveal sc"><p class="badge">🚚 Supply chain angle</p><p>${k.sc}</p></div>
+ <button class="small" id="cls" aria-expanded="false">🎓 Use this in class</button><div id="clsbox" hidden class="reveal"><p><strong>Discuss:</strong> ${k.dq}</p></div>`;
  if(k.second)h+=`<div id="s2"><p class="q" id="q2">${k.second.q}</p><div class="opts" role="group" aria-labelledby="q2">${k.second.opts.map((o,j)=>`<button data-j="${j}">${o}</button>`).join('')}</div><div id="out2"></div></div>`;
  else h+=nextBtn();
  document.getElementById('out').innerHTML=h;
@@ -202,8 +245,8 @@ function second(k,j){
  const s=k.second;mark(document.querySelectorAll('#s2 .opts button'),s.ok);
  const good=j===s.ok;if(good)score++;
  document.getElementById('out2').innerHTML=`<div class="reveal"><p class="badge">${good?'✔ Right.':'✖ Not quite.'}</p><p>${s.out}</p>
- <p class="why">What could Monster have done?</p><ul class="check"><li>Tell customers about the limit.</li><li>Print the limit on every quote.</li><li>Require head-office sign-off above the limit.</li></ul></div>
- <div class="reveal sc"><p class="badge">For HR and managers: an approval matrix</p>
+ ${flow([['🏗️','Buyer sues'],['🏭','Monster pays'],['🤝','Monster may sue agent']])}<p class="why">🛠️ What could Monster have done?</p><ul class="check"><li>Tell customers about the limit.</li><li>Print the limit on every quote.</li><li>Require head-office sign-off above the limit.</li></ul></div>
+ <div class="reveal sc"><p class="badge">👥 For HR and managers: an approval matrix</p>
  <table><caption class="sr">Example approval matrix</caption><tr><th>Role</th><th>Can sign up to</th></tr><tr><td>Sales agent</td><td>Cdn$400,000</td></tr><tr><td>Regional director</td><td>Cdn$1,000,000</td></tr><tr><td>Head office</td><td>Above that</td></tr></table>
  <p>Only the $400,000 limit comes from the scenario. The other rows are examples. A matrix only works if customers see it, and if it matches job descriptions and onboarding.</p></div>`+nextBtn();
  say(s.out);hookNext();foc('#out2 .reveal');
@@ -217,10 +260,11 @@ function border(){
  app.innerHTML=`<section class="card" ${acc('blue')}><span class="tag">Private international law · Same scenario</span>
  <div class="head">${ICONS.blue}<h2>Cross the border</h2></div>
  <p>Monster is in Winnipeg. The buyer is in Australia. When a deal crosses a border, three questions come up before anyone argues about the contract itself. The scenario does not answer them, and that is the problem.</p>
- <p><em>Private international law: the rules for deals and disputes that cross borders.</em></p>
- ${PIL.map((x,i)=>`<button class="small" style="width:100%" id="pb${i}" aria-expanded="false">${i+1}. ${x[0]}</button><div id="px${i}" hidden class="reveal"><p>${x[1]}</p><p class="why">${x[2]}</p></div>`).join('')}
- <div class="reveal sc"><p class="badge">Supply chain angle</p><p>Three short clauses prevent most of this: which law, which court, and whether disputes go to arbitration. Check for them in every export contract, next to the Incoterms rule and payment terms.</p></div>
- <button class="small" id="cls" aria-expanded="false">Use this in class</button><div id="clsbox" hidden class="reveal"><p><strong>Discuss:</strong> Should a small exporter accept the buyer's home court to win the deal?</p></div>
+ ${flow([['🇨🇦','Seller: Winnipeg'],['🤝','Agent: Sydney'],['🇦🇺','Buyer: Australia']])}
+ <p>📖 <em>Private international law: the rules for deals and disputes that cross borders.</em></p>
+ ${PIL.map((x,i)=>`<button class="small" style="width:100%" id="pb${i}" aria-expanded="false"><span aria-hidden="true">${PE[i]} </span>${i+1}. ${x[0]}</button><div id="px${i}" hidden class="reveal"><p>${x[1]}</p><p class="why">${x[2]}</p></div>`).join('')}
+ <div class="reveal sc"><p class="badge">🚚 Supply chain angle</p><p>Three short clauses prevent most of this: which law, which court, and whether disputes go to arbitration. Check for them in every export contract, next to the Incoterms rule and payment terms.</p></div>
+ <button class="small" id="cls" aria-expanded="false">🎓 Use this in class</button><div id="clsbox" hidden class="reveal"><p><strong>Discuss:</strong> Should a small exporter accept the buyer's home court to win the deal?</p></div>
  ${nextBtn()}</section>`;
  PIL.forEach((x,i)=>toggle('pb'+i,'px'+i));toggle('cls','clsbox');hookNext();
 }
@@ -228,25 +272,32 @@ function nextBtn(){return `<div class="nav"><button class="primary" id="next">${
 function hookNext(){const n=document.getElementById('next');if(n)n.onclick=()=>go(step+1)}
 function final(){
  const msg=score===TOTAL_Q?'Perfect. Hard to beat.':score>=3?'Solid. Can your team beat it?':'These cases are tricky. Try again?';
- app.innerHTML=`<section class="card" ${acc('teal')}><h2>Your score</h2><p class="score">${score} / ${TOTAL_Q}</p><p>${msg}</p>
+ app.innerHTML=`<section class="card" ${acc('teal')}><h2>Your score</h2><p class="score">🏆 ${score} / ${TOTAL_Q}</p><p class="stars" aria-hidden="true">${"⭐".repeat(score)}${"☆".repeat(TOTAL_Q-score)}</p><p>${msg}</p>
  <div class="nav"><button class="primary" id="share">Copy my score to share</button></div><p id="shmsg" role="status"></p></section>
- <section class="card" ${acc('teal')}><h2>Patentability ladder</h2>
- <p>Tap each rung to see what Canadian law says.</p>
- <ul class="rungs">${ladder.map((r,i)=>`<li><button data-i="${i}" aria-pressed="false"><span class="pill">${icon[r[1]]} ${r[1]}</span>${r[0]}</button></li>`).join('')}</ul>
+ <section class="card" ${acc('teal')}><h2>🪜 Patentability ladder</h2>
+ <p>Code is at the top, living things at the bottom. Tap each rung to see where Canadian law draws the line: it runs between the cell and the whole plant.</p>
+ <p class="deco" aria-hidden="true" style="padding:0"><span>💻 TECH</span><span>⬇</span><span>🧬 BIOLOGY</span></p><ul class="rungs">${ladder.map((r,i)=>`<li><button data-i="${i}" aria-pressed="false"><span class="pill">${icon[r[1]]} ${r[1]}</span><span aria-hidden="true">${LE[i]} </span>${r[0]}</button></li>`).join('')}</ul>
  <div class="reveal" id="rd" role="status">Pick a rung.</div>
  <p><strong>Canada won't patent the mouse or the plant, but it will patent the gene and cell inside it.</strong></p></section>
- <section class="card" ${acc('blue')}><h2>Actual vs apparent authority</h2>
+ <section class="card" ${acc('blue')}><h2>🤝 Actual vs apparent authority</h2>
  <table><tr><th>Actual</th><td>What the company really allowed the agent to do.</td></tr><tr><th>Apparent</th><td>What outsiders reasonably believe he can do, based on what the company showed them.</td></tr></table>
  <p class="why">If the company hides a limit, outsiders can rely on the appearance.</p></section>
- <section class="card" ${acc('orange')}><h2>Course connection: SCM850</h2>
+ <section class="card" ${acc('orange')}><h2>🎓 Course connection: SCM850</h2>
  <p>Built while studying International Business Law (SCM850) in Seneca Polytechnic's Supply Chain Management program.</p>
  <table><caption class="sr">Topics and where they appear</caption><tr><th>Topic</th><th>Where you saw it</th></tr>
  <tr><td>Intellectual property</td><td>Amazon 1-Click, Harvard Mouse, Schmeiser</td></tr>
  <tr><td>Agency</td><td>Monster Road Equipment</td></tr>
  <tr><td>Private international law</td><td>Cross the border</td></tr></table>
  <p>Amazon shows up twice in my coursework: patent law here, and competition law in my SCM850 case study on Germany's Bundeskartellamt.</p></section>
- <section class="card" ${acc('purple')}><h2>The thread</h2><p>The law protects what is clearly defined and clearly communicated. A patent claim has to be specific, and an authority limit has to be shared.</p>
- <p>Want more? See my other projects on <a href="https://github.com/markfourman">GitHub</a>, or connect on <a href="https://www.linkedin.com/in/mark-fourmanovskis/">LinkedIn</a>.</p>
+ <section class="card" ${acc('purple')}><h2>🧵 The thread</h2><p>The law protects what is clearly defined and clearly communicated. A patent claim has to be specific, and an authority limit has to be shared.</p>
+ <p class="why">More supply chain interactives I built:</p>
+ <ul class="apps">
+ <li><a href="https://markfourman.github.io/cargo-voyage/"><span aria-hidden="true">🚢 </span>Cargo Voyage<small>Follow a shipment into Canada</small></a></li>
+ <li><a href="https://markfourman.github.io/incoterms-explorer/"><span aria-hidden="true">📦 </span>Incoterms Explorer<small>Who pays, who carries the risk</small></a></li>
+ <li><a href="https://markfourman.github.io/supply-chain-workbook/"><span aria-hidden="true">📊 </span>Supply Chain Workbook<small>Interactive supply chain lessons</small></a></li>
+ <li><a href="https://markfourman.github.io/design-modularity-slider/"><span aria-hidden="true">🧩 </span>Integrated or modular?<small>A 3D supply chain trade-off slider</small></a></li>
+ </ul>
+ <p>Connect on <a href="https://www.linkedin.com/in/mark-fourmanovskis/">LinkedIn</a> or see all projects on <a href="https://github.com/markfourman">GitHub</a>.</p>
  <div class="nav"><button class="primary" id="again">Play again</button></div></section>`;
  app.querySelectorAll('.rungs button').forEach(b=>b.onclick=()=>{
   app.querySelectorAll('.rungs button').forEach(x=>x.setAttribute('aria-pressed','false'));
