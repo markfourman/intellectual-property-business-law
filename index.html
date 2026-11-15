@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Who Owns It? Who's Bound? 4 Canadian Business Law Lessons</title>
+<meta name="description" content="Can you patent a mouse? Who pays when a sales agent oversteps? A 5-minute interactive on four Canadian business law cases, built by a Seneca supply chain student.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Can you patent a mouse? 4 Canadian business law lessons">
+<meta property="og:description" content="Guess the ruling in 3 real patent cases and 1 agency scenario. 5 minutes, works on your phone.">
+<meta property="og:url" content="https://markfourman.github.io/intellectual-property-business-law/">
+<meta property="og:image" content="https://markfourman.github.io/intellectual-property-business-law/preview.png">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+:root{--ink:#1a1a1a;--bg:#f7f7f5;--card:#fff;--line:#c9c9c4;
+--teal:#0b6465;--tealbg:#e3f3f3;--purple:#5b2a86;--purplebg:#f0e8f8;
+--orange:#8f4300;--orangebg:#fdeedd;--blue:#1b4a99;--bluebg:#e6eefb}
+*{box-sizing:border-box}
+body{margin:0;font:18px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--ink);background:var(--bg)}
+main{max-width:640px;margin:0 auto;padding:16px}
+header.top{padding:12px 16px 0;max-width:640px;margin:0 auto}
+header.top p{margin:0;font-size:.85rem}
+header.top .brand{font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.progress{display:flex;gap:6px;margin:8px 0 4px;padding:0;list-style:none}
+.progress li{flex:1;height:8px;border-radius:4px;background:var(--line)}
+.progress li.done{background:var(--ink)}
+.card{background:var(--card);border:2px solid var(--accent,var(--line));border-radius:14px;padding:20px;margin:12px 0}
+.tag{display:inline-block;font-size:.85rem;font-weight:700;padding:4px 10px;border-radius:999px;background:var(--accentbg);color:var(--accent);border:1px solid var(--accent)}
+.head{display:flex;align-items:center;gap:12px}
+.head svg{flex:none;width:56px;height:56px}
+h1,h2{line-height:1.2;margin:.6em 0 .4em}
+h1{font-size:1.9rem}h2{font-size:1.45rem;margin:.2em 0}
+h2:focus,h1:focus{outline:3px solid var(--accent,var(--ink));outline-offset:4px}
+.q{font-weight:700;margin-top:1.2em}
+.opts{display:grid;gap:10px;margin:10px 0}
+button{font:inherit;min-height:48px;padding:10px 16px;border-radius:10px;border:2px solid var(--accent,var(--ink));background:#fff;color:var(--ink);cursor:pointer;text-align:left}
+button:hover{background:var(--accentbg,#eee)}
+button:focus-visible,a:focus-visible{outline:4px solid #000;outline-offset:3px;box-shadow:0 0 0 7px #fff}
+button.primary{background:var(--accent,var(--ink));color:#fff;font-weight:700;text-align:center}
+button.primary:hover{filter:brightness(1.15);background:var(--accent,var(--ink))}
+button.small{min-height:44px;margin-top:6px}
+button[aria-pressed=true]{background:var(--accent);color:#fff}
+button:disabled{cursor:default;opacity:1}
+button.right{border-width:4px}
+.reveal{border-left:6px solid var(--accent);background:var(--accentbg);padding:12px 16px;border-radius:8px;margin:14px 0}
+.reveal p{margin:.4em 0}
+.reveal:focus{outline:3px solid var(--accent,var(--ink));outline-offset:3px}
+.badge{font-weight:700}
+.why{font-weight:600}
+.sc{border-left-color:var(--teal)}
+.split{display:flex;gap:4px;margin:8px 0}
+.split span{flex:1;height:22px;border-radius:4px;background:var(--accent);border:2px solid var(--accent)}
+.split span.no{background:#fff}
+table{border-collapse:collapse;width:100%;margin:8px 0;font-size:.95rem}
+th,td{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+th{background:#fff}
+ul.check{padding-left:1.2em}
+.rungs{display:grid;gap:8px;padding:0;list-style:none}
+.rungs button{width:100%}
+.pill{font-weight:700;padding:2px 8px;border-radius:6px;border:2px solid currentColor;margin-right:6px;background:#fff;color:var(--ink)}
+.score{font-size:2.4rem;font-weight:800;margin:.1em 0}
+.hook button{text-align:center}
+footer{max-width:640px;margin:24px auto;padding:0 16px 40px;font-size:.88rem}
+footer p{margin:.4em 0}
+a{color:var(--blue);font-weight:600}
+.nav{display:flex;justify-content:flex-end;margin-top:12px;gap:10px;flex-wrap:wrap}
+.sr{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+@media (prefers-reduced-motion:no-preference){.reveal{animation:fade .35s ease}@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
+</style>
+</head>
+<body>
+<header class="top">
+  <p class="brand">Canadian Business Law</p>
+  <p>Educational summary by a Seneca supply chain student. Not legal advice.</p>
+  <ol class="progress" id="progress" aria-hidden="true"></ol>
+  <p id="steptxt"></p>
+</header>
+<main id="app"></main>
+<div class="sr" id="live" aria-live="polite" role="status"></div>
+<footer>
+  <p><strong>Cases:</strong></p>
+  <p><em>Amazon.com, Inc. v. Canada (Attorney General)</em>, 2011 FCA 328.<br>
+  <em>Harvard College v. Canada (Commissioner of Patents)</em>, 2002 SCC 76.<br>
+  <em>Monsanto Canada Inc. v. Schmeiser</em>, 2004 SCC 34.</p>
+  <p><strong>Treaties:</strong> United Nations Convention on Contracts for the International Sale of Goods (1980). Convention on the Recognition and Enforcement of Foreign Arbitral Awards (1958).</p>
+  <p>Scenario 4 adapted from [TEXTBOOK CITATION - add from your copy]. It is a textbook hypothetical, not a real court case.</p>
+  <p>Educational summary, not legal advice.</p>
+  <p>Made for SCM850 International Business Law, Seneca Polytechnic. Built by Mark Fourmanovskis · <a href="https://www.linkedin.com/in/mark-fourmanovskis/">LinkedIn</a> · <a href="https://github.com/markfourman">GitHub</a></p>
+</footer>
+<script>
+const ICONS={
+teal:'<svg viewBox="0 0 56 56" aria-hidden="true"><rect x="4" y="8" width="48" height="38" rx="6" fill="#e3f3f3" stroke="#0b6465" stroke-width="3"/><rect x="12" y="18" width="26" height="10" rx="5" fill="#0b6465"/><path d="M34 28l-2 14 5-4 4 7 3-2-4-7 6-1z" fill="#fff" stroke="#1a1a1a" stroke-width="2"/></svg>',
+purple:'<svg viewBox="0 0 56 56" aria-hidden="true"><ellipse cx="26" cy="34" rx="17" ry="11" fill="#f0e8f8" stroke="#5b2a86" stroke-width="3"/><circle cx="38" cy="22" r="7" fill="#f0e8f8" stroke="#5b2a86" stroke-width="3"/><circle cx="43" cy="14" r="5" fill="#f0e8f8" stroke="#5b2a86" stroke-width="3"/><path d="M9 34c-6 0-6 9-1 11" fill="none" stroke="#5b2a86" stroke-width="3"/><circle cx="41" cy="20" r="1.8" fill="#1a1a1a"/></svg>',
+orange:'<svg viewBox="0 0 56 56" aria-hidden="true"><path d="M28 52V20" stroke="#8f4300" stroke-width="3"/><g fill="#fdeedd" stroke="#8f4300" stroke-width="2.5"><circle cx="28" cy="10" r="5"/><circle cx="20" cy="18" r="5"/><circle cx="36" cy="18" r="5"/><circle cx="21" cy="28" r="4"/><circle cx="35" cy="28" r="4"/></g><path d="M28 44c-8-1-12-5-14-10 8 0 13 3 14 10zM28 44c8-1 12-5 14-10-8 0-13 3-14 10z" fill="#8f4300"/></svg>',
+blue:'<svg viewBox="0 0 56 56" aria-hidden="true"><rect x="10" y="6" width="30" height="40" rx="4" fill="#e6eefb" stroke="#1b4a99" stroke-width="3"/><path d="M16 18h18M16 26h18M16 34h10" stroke="#1b4a99" stroke-width="3"/><circle cx="40" cy="40" r="11" fill="#1b4a99"/><path d="M34 40l4 4 8-8" fill="none" stroke="#fff" stroke-width="3"/></svg>'};
+const C=[
+{c:'teal',tag:'Patents · Real case',title:'Amazon 1-Click',
+ story:'In the late 1990s, Amazon filed for a Canadian patent on one-click ordering. The patent office refused, saying a business method is not an "invention." Amazon took it to court.',
+ term:'Patent: a time-limited right to stop others from using your invention.',
+ q:'Can a computer-based business method like 1-click be patented in Canada?',
+ opts:['No. Business methods are banned.','Yes, if it passes the normal tests.'],ok:1,
+ out:'Business methods are not automatically excluded. The Federal Court of Appeal said the claim must be read as a whole, and an abstract idea on its own is not enough. It sent the application back for another look.',
+ why:'Why it matters: describe your software by how it works, not as a bare idea.',
+ extra:'In the Patent Act, "art" means a way of doing something. It does not mean artwork. The ending: the patent office allowed the patent in December 2011, 13 years after Amazon applied.',
+ sc:'Checkout steps are a process, and processes can be protected when they are tied to real technology. Ideas about how to run a supply chain are harder to protect than the systems that run it.',
+ dq:'How long should a business method be protected before everyone can copy it?'},
+{c:'purple',tag:'Patents · Real case',title:'The Harvard Mouse',
+ story:'Harvard scientists created a mouse genetically modified to get cancer, for research. They sought patents on the method, and on the mouse itself. Canada\'s patent office refused the mouse.',
+ term:'Higher life forms: plants and animals as whole living things.',
+ q:'Can the mouse itself be patented in Canada?',
+ opts:['Yes, it was invented by people.','No, it is a higher life form.'],ok:1,
+ out:'The Supreme Court said no. A mouse is not a "manufacture" or "composition of matter." Whether to allow patents on higher life forms is a decision for Parliament.',
+ why:'Why it matters: the same invention can be protected in one country and not in another. Patents stop at the border: the US patent gave Harvard no rights in Canada, so it had to apply again here.',
+ vote:'Close call: 5 judges to 4.',split:[5,4],compare:true,
+ sc:'Rules differ by country, so a firm choosing where to do research, license or sell must check each market. Legal rules are part of network design, like tariffs and lead times.',
+ dq:'Should Canada follow the US on patenting higher life forms?'},
+{c:'orange',tag:'Patents · Real case',title:'Monsanto v. Schmeiser',
+ story:'Monsanto patented a gene and a cell that make canola resist its weedkiller. Farmer Percy Schmeiser grew canola that contained them. He never bought the seed or signed a licence.',
+ term:'Infringement: using a patented invention without permission.',
+ q:'Did Schmeiser infringe the patent?',
+ opts:['Yes.','No, he never bought the seed.'],ok:0,
+ out:'The Supreme Court said yes. The plant is not patentable, but the gene and cell inside it are, and he used them. He owed no profits, because he gained nothing from the invention.',
+ why:'Why it matters: protect the gene or cell, not the whole plant.',
+ vote:'Close call: 5 judges to 4.',split:[5,4],
+ sc:'Seed and grain pass through farms, trucks and elevators. Knowing exactly what is in a load, and who has rights to it, is a traceability and compliance question.',
+ dq:'Should it matter that the farmer never signed a licence?'},
+{c:'blue',tag:'Agency · Hypothetical scenario',title:'Monster Road Equipment',
+ story:'A Winnipeg equipment maker hires an agent in Australia. In a private agreement, it limits him to contracts under Cdn$400,000. He signs an 8-unit sale to a construction firm for Cdn$824,000. The factory is at peak capacity, delivers late, and the buyer sues.',
+ term:'Agent: a person who can make deals for a company (the principal).',
+ q:'Is Monster bound by the contract?',
+ opts:['Yes, it is bound.','No, he went over his limit.'],ok:0,
+ out:'Likely yes. The agent had apparent authority: he looked authorized, and Monster never told the buyer about the limit.',
+ why:'Why it matters: an internal limit only protects you if outsiders know about it.',
+ sc:'Sales promised 8 units to a plant already at peak capacity. Sales and production were not connected before the contract was signed, so this was a planning gap as much as a legal one.',
+ dq:'Who should carry the risk of a hidden authority limit?',
+ second:{q:'Who pays the buyer in the end?',opts:['Monster pays first.','The agent pays the buyer directly.'],ok:0,
+  out:'Monster pays the buyer. It can then sue the agent for breaking their agreement, since he knew the limit, but he may not be able to pay.'}}
+];
+const ladder=[
+['An idea alone','No','Amazon: an abstract idea alone is not enough.'],
+['A business method','Depends','Amazon: not excluded, but it must be a real, practical method.'],
+['A gene','Yes','Schmeiser: the patented gene was protected.'],
+['A cell','Yes','Schmeiser: the patented cell was protected.'],
+['A whole plant','No','Schmeiser: the plant is not patentable, but its gene and cell are.'],
+['A whole animal','No','Harvard Mouse: higher life forms cannot be patented in Canada.']];
+const icon={Yes:'✔',No:'✖',Depends:'?'};
+const app=document.getElementById('app'),live=document.getElementById('live'),prog=document.getElementById('progress'),steptxt=document.getElementById('steptxt');
+let step=0,score=0;const total=C.length+3,TOTAL_Q=5;
+const say=t=>{live.textContent='';setTimeout(()=>live.textContent=t,50)};
+const acc=c=>`style="--accent:var(--${c});--accentbg:var(--${c}bg)"`;
+function bar(){prog.innerHTML='';for(let i=0;i<total;i++){const li=document.createElement('li');if(i<=step)li.className='done';prog.appendChild(li)}
+ steptxt.textContent=step===0?'Start':step<=C.length?`Case ${step} of ${C.length}`:step===C.length+1?'Cross the border':'Recap'}
+function go(n){step=n;if(n===0)score=0;bar();render();const h=app.querySelector('h1,h2');if(h){h.tabIndex=-1;h.focus()}window.scrollTo(0,0)}
+function render(){
+ if(step===0)return intro();
+ if(step<=C.length)return caseView(C[step-1]);
+ if(step===C.length+1)return border();
+ final();
+}
+function intro(){
+ app.innerHTML=`<section class="card hook" ${acc('purple')}><h1>Can you patent a mouse?</h1>
+ <p>Take a guess. Then try four Canadian business law cases, about 5 minutes, and see your score.</p>
+ <div class="opts" role="group" aria-label="Your guess">
+ <button data-g="1">Yes, anything people create</button><button data-g="2">No, not in Canada</button></div>
+ <div id="hk"></div></section>`;
+ app.querySelectorAll('.hook .opts button').forEach(b=>b.onclick=()=>{
+  app.querySelectorAll('.hook .opts button').forEach(x=>x.disabled=true);b.setAttribute('aria-pressed','true');
+  document.getElementById('hk').innerHTML=`<div class="reveal"><p>Hold that thought. Case 2 has the answer, and a twist.</p></div><div class="nav"><button class="primary" id="start">Start</button></div>`;
+  say('Hold that thought. Case 2 has the answer.');const st=document.getElementById('start');st.onclick=()=>go(1);st.focus()});
+}
+function caseView(k){
+ app.innerHTML=`<section class="card" ${acc(k.c)}>
+ <span class="tag">${k.tag}</span>
+ <div class="head">${ICONS[k.c]}<h2>${step}. ${k.title}</h2></div>
+ <p>${k.story}</p><p><em>${k.term}</em></p>
+ <p class="q" id="q">You're the judge: ${k.q}</p>
+ <div class="opts" role="group" aria-labelledby="q">${k.opts.map((o,i)=>`<button data-i="${i}">${o}</button>`).join('')}</div>
+ <div id="out"></div></section>`;
+ app.querySelectorAll('.opts button').forEach(b=>b.onclick=()=>pick(k,+b.dataset.i));
+}
+function mark(bs,ok){bs.forEach((x,j)=>{x.disabled=true;if(j===ok){x.classList.add('right');x.insertAdjacentHTML('beforeend',' <strong aria-hidden="true">✔</strong><span class="sr"> (correct answer)</span>')}})}
+function pick(k,i){
+ mark(app.querySelectorAll('.opts button'),k.ok);
+ const good=i===k.ok;if(good)score++;
+ let h=`<div class="reveal"><p class="badge">${good?'✔ You got it.':'✖ Not quite.'}</p><p>${k.out}</p>`;
+ if(k.vote)h+=`<p>${k.vote}</p><div class="split" aria-hidden="true">${'<span></span>'.repeat(k.split[0])}${'<span class="no"></span>'.repeat(k.split[1])}</div>`;
+ h+=`<p class="why">${k.why}</p>`;
+ if(k.extra)h+=`<p>${k.extra}</p>`;
+ if(k.compare)h+=`<button class="small" id="cmp" aria-expanded="false">Compare Canada and the US</button><div id="cmpbox" hidden><table><caption class="sr">Canada compared with the US</caption><tr><th></th><th>Canada</th><th>US</th></tr><tr><th>Mouse</th><td>✖ Refused (2002)</td><td>✔ Patent granted in 1988</td></tr></table></div>`;
+ h+=`</div><div class="reveal sc"><p class="badge">Supply chain angle</p><p>${k.sc}</p></div>
+ <button class="small" id="cls" aria-expanded="false">Use this in class</button><div id="clsbox" hidden class="reveal"><p><strong>Discuss:</strong> ${k.dq}</p></div>`;
+ if(k.second)h+=`<div id="s2"><p class="q" id="q2">${k.second.q}</p><div class="opts" role="group" aria-labelledby="q2">${k.second.opts.map((o,j)=>`<button data-j="${j}">${o}</button>`).join('')}</div><div id="out2"></div></div>`;
+ else h+=nextBtn();
+ document.getElementById('out').innerHTML=h;
+ say((good?'Correct. ':'Not quite. ')+k.out);
+ toggle('cmp','cmpbox');toggle('cls','clsbox');foc('#out .reveal');
+ if(k.second)document.querySelectorAll('#s2 .opts button').forEach(x=>x.onclick=()=>second(k,+x.dataset.j));
+ hookNext();
+}
+function toggle(b,box){const e=document.getElementById(b);if(!e)return;e.onclick=()=>{const x=document.getElementById(box);x.hidden=!x.hidden;e.setAttribute('aria-expanded',!x.hidden)}}
+function second(k,j){
+ const s=k.second;mark(document.querySelectorAll('#s2 .opts button'),s.ok);
+ const good=j===s.ok;if(good)score++;
+ document.getElementById('out2').innerHTML=`<div class="reveal"><p class="badge">${good?'✔ Right.':'✖ Not quite.'}</p><p>${s.out}</p>
+ <p class="why">What could Monster have done?</p><ul class="check"><li>Tell customers about the limit.</li><li>Print the limit on every quote.</li><li>Require head-office sign-off above the limit.</li></ul></div>
+ <div class="reveal sc"><p class="badge">For HR and managers: an approval matrix</p>
+ <table><caption class="sr">Example approval matrix</caption><tr><th>Role</th><th>Can sign up to</th></tr><tr><td>Sales agent</td><td>Cdn$400,000</td></tr><tr><td>Regional director</td><td>Cdn$1,000,000</td></tr><tr><td>Head office</td><td>Above that</td></tr></table>
+ <p>Only the $400,000 limit comes from the scenario. The other rows are examples. A matrix only works if customers see it, and if it matches job descriptions and onboarding.</p></div>`+nextBtn();
+ say(s.out);hookNext();foc('#out2 .reveal');
+}
+const foc=q=>{const e=document.querySelector(q);if(e){e.tabIndex=-1;e.focus({preventScroll:true})}};
+const PIL=[
+['Where can the buyer sue?','Possibly in Australia, possibly in Manitoba. If the contract does not name a court, both sides can spend time and money arguing about where to argue.','Fix: a choice-of-court clause.'],
+['Whose law applies?','If the contract does not pick one, a court decides. Canada and Australia are both members of the UN sales convention (CISG), which can apply automatically to a sale of goods between businesses in member countries unless the contract excludes it. It covers the sale. Whether it also answers an agent-authority question is a grey area that experts debate, so the contract should say which law governs.','Fix: a governing-law clause.'],
+['Can a win in Australia reach Winnipeg?','Not automatically. A court judgment from one country has to be recognized by a court in the other before it can reach assets there. Arbitration awards travel more easily: both countries belong to the New York Convention, whose members agree to enforce each other\'s awards.','Fix: an arbitration clause.']];
+function border(){
+ app.innerHTML=`<section class="card" ${acc('blue')}><span class="tag">Private international law · Same scenario</span>
+ <div class="head">${ICONS.blue}<h2>Cross the border</h2></div>
+ <p>Monster is in Winnipeg. The buyer is in Australia. When a deal crosses a border, three questions come up before anyone argues about the contract itself. The scenario does not answer them, and that is the problem.</p>
+ <p><em>Private international law: the rules for deals and disputes that cross borders.</em></p>
+ ${PIL.map((x,i)=>`<button class="small" style="width:100%" id="pb${i}" aria-expanded="false">${i+1}. ${x[0]}</button><div id="px${i}" hidden class="reveal"><p>${x[1]}</p><p class="why">${x[2]}</p></div>`).join('')}
+ <div class="reveal sc"><p class="badge">Supply chain angle</p><p>Three short clauses prevent most of this: which law, which court, and whether disputes go to arbitration. Check for them in every export contract, next to the Incoterms rule and payment terms.</p></div>
+ <button class="small" id="cls" aria-expanded="false">Use this in class</button><div id="clsbox" hidden class="reveal"><p><strong>Discuss:</strong> Should a small exporter accept the buyer's home court to win the deal?</p></div>
+ ${nextBtn()}</section>`;
+ PIL.forEach((x,i)=>toggle('pb'+i,'px'+i));toggle('cls','clsbox');hookNext();
+}
+function nextBtn(){return `<div class="nav"><button class="primary" id="next">${step===C.length?'Cross the border':step>C.length?'See my score':'Next case'}</button></div>`}
+function hookNext(){const n=document.getElementById('next');if(n)n.onclick=()=>go(step+1)}
+function final(){
+ const msg=score===TOTAL_Q?'Perfect. Hard to beat.':score>=3?'Solid. Can your team beat it?':'These cases are tricky. Try again?';
+ app.innerHTML=`<section class="card" ${acc('teal')}><h2>Your score</h2><p class="score">${score} / ${TOTAL_Q}</p><p>${msg}</p>
+ <div class="nav"><button class="primary" id="share">Copy my score to share</button></div><p id="shmsg" role="status"></p></section>
+ <section class="card" ${acc('teal')}><h2>Patentability ladder</h2>
+ <p>Tap each rung to see what Canadian law says.</p>
+ <ul class="rungs">${ladder.map((r,i)=>`<li><button data-i="${i}" aria-pressed="false"><span class="pill">${icon[r[1]]} ${r[1]}</span>${r[0]}</button></li>`).join('')}</ul>
+ <div class="reveal" id="rd" role="status">Pick a rung.</div>
+ <p><strong>Canada won't patent the mouse or the plant, but it will patent the gene and cell inside it.</strong></p></section>
+ <section class="card" ${acc('blue')}><h2>Actual vs apparent authority</h2>
+ <table><tr><th>Actual</th><td>What the company really allowed the agent to do.</td></tr><tr><th>Apparent</th><td>What outsiders reasonably believe he can do, based on what the company showed them.</td></tr></table>
+ <p class="why">If the company hides a limit, outsiders can rely on the appearance.</p></section>
+ <section class="card" ${acc('orange')}><h2>Course connection: SCM850</h2>
+ <p>Built while studying International Business Law (SCM850) in Seneca Polytechnic's Supply Chain Management program.</p>
+ <table><caption class="sr">Topics and where they appear</caption><tr><th>Topic</th><th>Where you saw it</th></tr>
+ <tr><td>Intellectual property</td><td>Amazon 1-Click, Harvard Mouse, Schmeiser</td></tr>
+ <tr><td>Agency</td><td>Monster Road Equipment</td></tr>
+ <tr><td>Private international law</td><td>Cross the border</td></tr></table>
+ <p>Amazon shows up twice in my coursework: patent law here, and competition law in my SCM850 case study on Germany's Bundeskartellamt.</p></section>
+ <section class="card" ${acc('purple')}><h2>The thread</h2><p>The law protects what is clearly defined and clearly communicated. A patent claim has to be specific, and an authority limit has to be shared.</p>
+ <p>Want more? See my other projects on <a href="https://github.com/markfourman">GitHub</a>, or connect on <a href="https://www.linkedin.com/in/mark-fourmanovskis/">LinkedIn</a>.</p>
+ <div class="nav"><button class="primary" id="again">Play again</button></div></section>`;
+ app.querySelectorAll('.rungs button').forEach(b=>b.onclick=()=>{
+  app.querySelectorAll('.rungs button').forEach(x=>x.setAttribute('aria-pressed','false'));
+  b.setAttribute('aria-pressed','true');const r=ladder[+b.dataset.i];
+  document.getElementById('rd').textContent=`${icon[r[1]]} ${r[1]} in Canada. ${r[2]}`});
+ document.getElementById('share').onclick=async()=>{
+  const t=`I scored ${score}/${TOTAL_Q} on "Who Owns It? Who's Bound?", a Canadian business law quiz by Mark Fourmanovskis. Can you beat it? ${location.href}`;
+  let ok=false;try{await navigator.clipboard.writeText(t);ok=true}catch(e){}
+  document.getElementById('shmsg').textContent=ok?'Copied. Paste it into your post.':t};
+ document.getElementById('again').onclick=()=>go(0);
+}
+bar();render();
+</script>
+</body>
+</html>
